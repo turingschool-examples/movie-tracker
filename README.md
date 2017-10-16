@@ -35,7 +35,7 @@
 #### [PSQL Commands](http://postgresguide.com/utilities/psql.html)
 
 ## API
-  Hopefully you will be using fetch to make all your api calls. If you are making a post request note that you will need to pass in headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any any required fields into the body.
+  Hopefully you will be using fetch to make all your api calls. If you are making a post request note that you will need to pass in headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any required fields into the body.
 
 ###### Users
 
