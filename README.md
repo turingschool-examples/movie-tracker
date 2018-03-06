@@ -18,7 +18,7 @@ Bc this is still in beta here is what you'll need to know:
 
 ## Setup Postgresql
 
-### IMPORTANT: If you already have Postgresql on your computer for some reason, you will need to uninstall it
+#### IMPORTANT: If you already have Postgresql on your computer for some reason, you will need to uninstall it
 For information on how to do this read [this](https://postgresapp.com/documentation/remove.html)
 
 #### What is Postgresql?
