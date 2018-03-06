@@ -2,11 +2,9 @@
 
 This project is working off the The Movie DB API (https://www.themoviedb.org/documentation/api - note you'll need to go create an account to get an API key). The idea of the project is to be able to sign in as a user and save favorite movies.
 
-This repository will serve as you "backend", allowing you to connect to Postgres. You'll need to have another project
-set up (use create-react-app), to sit alongside this one. Do not put that project in the same repository as this one,
-save yourself a headache.
+This repository will serve as your "backend", allowing you to connect to Postgres. You'll need to set up a separate client-side application (use create-react-app), to sit alongside this one. Do not put that project in the same repository as this one, save yourself a headache.
 
-Bc this is still in beta here is what you'll need to know:
+Bc this is still in beta, here is what you'll need to know:
 * Using PostgreSQL
 * Setting up steps:
   * `npm install`
