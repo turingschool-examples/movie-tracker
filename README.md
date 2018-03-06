@@ -35,12 +35,12 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 	* *postgres -D /usr/local/var/postgres* (You could create an alias for this)
 	
 #### Press CMD-T to create a new tab in your terminal
-* Type *psql*. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. You might get an error *psql: FATAL: database "username" does not exist* To resolve this error type *createdb 'somthing does not exist'*
+* Type `psql`. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. You might get an error *psql: FATAL: database "username" does not exist* To resolve this error type *createdb 'somthing does not exist'*
 
 #### [PSQL Commands](http://postgresguide.com/utilities/psql.html)
 
 ## API
-  Hopefully you will be using fetch to make all your api calls. If you are making a post request note that you will need to pass in headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any any required fields into the body.
+  Hopefully you will be using fetch to make all your api calls. If you are making a post request, note that you will need to pass in headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any any required fields into the body.
 
 ###### Users
 
