@@ -129,6 +129,11 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 - Pass - Proptype validation is implemented for any component receiving props.
 - Fail - There are components missing proptype validation.
 
+### README Updates
+- Pass - The README.md file has been updated with a description of the project, the team, and how to get it up and
+  running
+- Fail - The boilerplate README is still in place
+
 ### 5. Code Sanitation
 
 The output from ESLint shows…
