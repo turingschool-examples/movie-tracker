@@ -56,7 +56,7 @@ For information on how to do this read [this](https://postgresapp.com/documentat
   Keep in mind the response only gives the new user ID.
 
 * ##### Add Favorite - `/users/favorites/new`
-  To save a favorite you must send into the body: movie_id, user_id and title, poster_path, release_date, vote_average, overview.
+  To save a favorite you must send into the body: movie_id, user_id, title, poster_path, release_date, vote_average, overview.
   Keep in mind the response only gives the new favorite id
 
 * ##### Receive All Favorites - `/users/:id/favorites`
