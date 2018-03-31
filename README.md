@@ -8,11 +8,14 @@ Bc this is still in beta, here is what you'll need to know:
 * Using PostgreSQL
 * Setting up steps:
   * `npm install`
+  * Add a folder in `/src` called `app` with a file `index.js` (this is the entry point for webpack)
   * If you don't have postgresSQl, scroll down to `Setup Postgresql` and follow those steps.
   * Then run `npm run build`
   * Lastly run `npm start` - visit `/api/users` - should see a json response.
 * 2 APIs - MovieDB and your very own api
 * Fetch upcoming movies from MovieDB
+* In order for your front end (built with create-react-app) to interact with this backend, you will need to add the following above the scripts section of your create-react-app's package.json file
+  * `"proxy": "http://localhost:3000",`
 
 ## Setup Postgresql
 
@@ -31,11 +34,14 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 	
 #### Running Postgres
 * Start Postgres  
+  * postgres -D /usr/local/var/postgres* (You could create an alias for this)
   * `psql -f ./database/users.sql` will drop and recreate your database. 
-	* *postgres -D /usr/local/var/postgres* (You could create an alias for this)
+  * You might get an error *psql: FATAL: database <username/database> does not exist* To resolve this error type *createdb <username/database>*
+* Once this is complete, you will only need to run `npm start` on the backend to get the database up and running.
+
 	
 #### Press CMD-T to create a new tab in your terminal
-* Type `psql`. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. You might get an error *psql: FATAL: database "username" does not exist* To resolve this error type *createdb 'somthing does not exist'*
+* Type `psql`. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. 
 
 #### [PSQL Commands](http://postgresguide.com/utilities/psql.html)
 
