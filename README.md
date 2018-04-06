@@ -24,7 +24,7 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 
 #### Installation:
 * Install Homebrew. Homebrew is a package manager for MacOS.
-	*  */usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)*
+	*  */usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"*
 	
 * Install Postgresql  
 	*  *brew install postgresql*	
