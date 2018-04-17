@@ -4,15 +4,12 @@ This project is working off the The Movie DB API (https://www.themoviedb.org/doc
 
 This repository will serve as your "backend", allowing you to connect to Postgres. You'll need to set up a separate client-side application (use create-react-app), to sit alongside this one. Do not put that project in the same repository as this one, save yourself a headache.
 
-Bc this is still in beta, here is what you'll need to know:
-* Using PostgreSQL
-* Setting up steps:
-  * `npm install`
-  * If you don't have postgresSQl, scroll down to `Setup Postgresql` and follow those steps.
-  * Then run `npm run build`
-  * Lastly run `npm start` - visit `/api/users` - should see a json response.
-* 2 APIs - MovieDB and your very own api
-* Fetch upcoming movies from MovieDB
+## Projeict Setup
+
+* Clone down this repo and run `npm install`
+* If you don't have postgresSQl, scroll down to `Setup Postgresql` and follow those steps.
+* Then run `npm run build`
+* Lastly run `npm start` - visit `localhost:3000/api/users` - you should see a json response with a single user.
 
 ## Setup Postgresql
 
@@ -30,7 +27,7 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 	
 #### Creating our database
 * From the command line, run the following command to create a users database `psql -f ./database/users.sql`
-* When you start up the server (npm install and npm start), you should now be able to visit `localhosst:3000/api/users` and see the database with a single user (Taylor)
+* When you start up the server (npm install and npm start), you should now be able to visit `localhost:3000/api/users` and see the database with a single user (Taylor)
 	
 #### Press CMD-T to create a new tab in your terminal
 * Type `psql`. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. You might get an error *psql: FATAL: database "username" does not exist* To resolve this error type *createdb 'somthing does not exist'*
@@ -38,7 +35,7 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 #### [PSQL Commands](http://postgresguide.com/utilities/psql.html)
 
 ## API
-  Hopefully you will be using fetch to make all your api calls. If you are making a post request, note that you will need to pass in headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any any required fields into the body.
+You will be using the fetch API to make all your api calls. If you are making a post request, note that you will need to pass in an options object with a method and headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any any required fields into the body. Check out the [docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for additional info.
 
 ###### Users
 
