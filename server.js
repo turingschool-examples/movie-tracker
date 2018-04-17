@@ -8,6 +8,11 @@ const app = express();
 const users = require('./routes/usersApi');
 
 app.use(cors());
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -27,10 +32,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use(express.static('app'));
 
-app.get('/', function (req, res) { res.sendFile(path.join(__dirname, '/index.html')) });
-
 app.use('/api', users);
-app.get('/*', function (req, res) { res.sendFile(path.join(__dirname, '/index.html')) });
 
 app.listen(port);
 

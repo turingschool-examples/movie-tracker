@@ -6,12 +6,10 @@ module.exports = {
   context: __dirname,
    entry: [
      'babel-polyfill',
-     './app/index.js'
    ],
    output: {
      path: path.join(__dirname, 'app'),
      filename: 'bundle.js',
-     publicPath: '/app/'
    },
    module: {
      loaders: [
@@ -21,17 +19,13 @@ module.exports = {
           include: path.join(__dirname, 'app'),
           exclude: /node_modules/,
           options: {
-            presets: ['latest', 'react'],
+            presets: ['env'],
             plugins: ['babel-plugin-transform-class-properties']
           }
-        },
-        {
-           test: /\.scss$/,
-           loaders: ["style-loader", "css-loader", "sass-loader"]
         }
      ]
    },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json', '.scss', '.css']
+    extensions: ['', '.js', '.jsx', '.json']
   }
 };
