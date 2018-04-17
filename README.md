@@ -8,8 +8,7 @@ This repository will serve as your "backend", allowing you to connect to Postgre
 
 * Clone down this repo and run `npm install`
 * If you don't have postgresSQl, scroll down to `Setup Postgresql` and follow those steps.
-* Then run `npm run build`
-* Lastly run `npm start` - visit `localhost:3000/api/users` - you should see a json response with a single user.
+* Run `npm start` - visit `localhost:3000/api/users` - you should see a json response with a single user.
 
 ## Setup Postgresql
 
