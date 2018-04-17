@@ -27,7 +27,7 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 	
 #### Creating our database
 * From the command line, run the following command to create a users database `psql -f ./database/users.sql`
-* When you start up the server (npm install and npm start), you should now be able to visit `localhost:3000/api/users` and see the database with a single user (Taylor)
+* When you start up the server (`npm install` and `npm start`), you should now be able to visit `localhost:3000/api/users` and see the database with a single user (Taylor)
 	
 #### Press CMD-T to create a new tab in your terminal
 * Type `psql`. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. You might get an error *psql: FATAL: database "username" does not exist* To resolve this error type *createdb 'somthing does not exist'*
