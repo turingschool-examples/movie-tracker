@@ -23,16 +23,14 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 * PostgreSQL is a powerful, open source object-relational database system
 
 #### Installation:
-* Install Homebrew. Homebrew is a package manager for MacOS.
-	*  */usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"*
+* Head over to [Postres.app](http://postgresapp.com/) to download and install PostgreSQL
+* When you click `initialize`, you should now be able to see that postgreSQL is running
+* To be able to use the command line tools, you will need to run the following commannd in your terminal to configure your $PATH `sudo mkdir -p /etc/paths.d && echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp`
+* You will need to close your terminal window and re-open it for the changes to take effect
 	
-* Install Postgresql  
-	*  *brew install postgresql*	
-	
-#### Running Postgres
-* Start Postgres  
-  * `psql -f ./database/users.sql` will drop and recreate your database. 
-	* *postgres -D /usr/local/var/postgres* (You could create an alias for this)
+#### Creating our database
+* From the command line, run the following command to create a users database `psql -f ./database/users.sql`
+* When you start up the server, you should now be able to visit `localhosst:3000/api/users` and see the database with a single user (Taylor)
 	
 #### Press CMD-T to create a new tab in your terminal
 * Type `psql`. This will get you into the interactive postgres terminal. From here you can run postgres and sql commands. You might get an error *psql: FATAL: database "username" does not exist* To resolve this error type *createdb 'somthing does not exist'*
