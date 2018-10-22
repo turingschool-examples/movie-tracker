@@ -34,7 +34,8 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 
 #### [PSQL Commands](http://postgresguide.com/utilities/psql.html)
 
-## API
+## API - Endpoints
+
 You will be using the fetch API to make all your api calls. If you are making a post request, note that you will need to pass in an options object with a method and headers - with a `'Content-Type': 'application/json'`. Additionally you will need to pass any any required fields into the body. Check out the [docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for additional info.
 
 ###### Users
