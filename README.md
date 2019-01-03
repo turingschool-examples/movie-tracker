@@ -4,7 +4,7 @@ This project is working off the The Movie DB API (https://www.themoviedb.org/doc
 
 This repository will serve as your "backend", allowing you to connect to Postgres. You'll need to set up a separate client-side application (use create-react-app), to sit alongside this one. Do not put that project in the same repository as this one, save yourself a headache.
 
-## Projeict Setup
+## Project Setup
 
 * Clone down this repo and run `npm install`
 * If you don't have postgresSQl, scroll down to `Setup Postgresql` and follow those steps.
@@ -19,7 +19,7 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 * PostgreSQL is a powerful, open source object-relational database system
 
 #### Installation:
-* Head over to [Postres.app](http://postgresapp.com/) to download and install PostgreSQL
+* Head over to [Postgres.app](http://postgresapp.com/) to download and install PostgreSQL
 * When you click `initialize`, you should now be able to see that postgreSQL is running
 * To be able to use the command line tools, you will need to run the following commannd in your terminal to configure your $PATH `sudo mkdir -p /etc/paths.d && echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp`
 * You will need to close your terminal window and re-open it for the changes to take effect
