@@ -86,7 +86,7 @@ You will be using the fetch API to make all your api calls. If you are making a 
 ##### Extensions:
   * A user stays signed in after refreshing the page. *Hint:* You will probably use localStorage. 
   * Should only take real email addresses *Hint:* Look into regular expressions
-  
+  * Convert your project to use [typescript](https://www.typescriptlang.org/)
   
 ## Rubric 
 
